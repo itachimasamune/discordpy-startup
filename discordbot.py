@@ -18,8 +18,8 @@ async def on_ready():
 async def on_message(message):
     # メッセージ送信者がBotだった場合は無視する
     if message.author.bot:
-        # if message.content == 'じゃあの':
-            # await message.channel.send('ばいびー')
+         if message.content == 'じゃあの':
+             await message.channel.send('ばいびー')
         return
     # 「/neko」と発言したら「にゃーん」が返る処理
     if message.content == '/test':
