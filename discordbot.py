@@ -22,8 +22,8 @@ async def on_message(message):
             # await message.channel.send('ばいびー')
         return
     # 「/neko」と発言したら「にゃーん」が返る処理
-    if message.content == '/neko':
-        await message.channel.send(random.choice(('にゃーん','にゅーん')))
+    if message.content == '/test':
+        await message.channel.send(random.choice(('てすてす','あー、あー、マイクテスト','あーあー','本日は晴天なり','超テスト','ファイナルテスト','シンプルイズテスト','過剰なテスト','試験','品質テスト','まごころテスト','テスト','えっ？','てきとーなテスト','ハーデスト','てすてすてすてすてすてすてすてす','TEST','伝説のテスト',':wink')))
     
 @bot.event
 async def on_command_error(ctx, error):
