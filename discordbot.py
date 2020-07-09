@@ -6,10 +6,15 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 # 起動時に動作する処理
-@.event
+@bot.event
 async def on_ready():
     # 起動したらターミナルにログイン通知が表示される
     print('ログインしました')
+
+#"""メッセージ受信時に実行されるイベントハンドラ"""
+@bot.event # イベントを受信するための構文（デコレータ）
+async def on_message(test): # イベントに対応する関数と受け取る引数
+    await ctx.send('testtest')
     
 @bot.event
 async def on_command_error(ctx, error):
