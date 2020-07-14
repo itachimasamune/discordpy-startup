@@ -22,7 +22,7 @@ async def on_message(message):
         return
     # メッセージ処理
     if message.content == '/test':
-        await message.channel.send(random.choice(('てすてす','ああ～、あああ～','チェックワンツー','イッツファイントゥデイ','あー、あー、マイクテスト','あーあー','本日は晴天なり','超テスト','ファイナルテスト','シンプルイズテスト','過剰なテスト','試験','品質テスト','まごころテスト','テスト','えっ？','てきとーなテスト','ハーデスト','てすてすてすてすてすてすてすてす','TEST','伝説のテスト')))
+        await message.channel.send(random.choice(('てすてす','ああ～、あああ～','チェックワンツー','イッツファイントゥデイ','あー、あー、マイクテスト','あーあー','本日は晴天なり','超テスト','ファイナルテスト','シンプルイズテスト','過剰なテスト','試験','品質テスト','まごころテスト','テスト','えっ？','てきとーなテスト','ハーデスト','てすてすてすてすてすてすてすてす','TEST','激しくテスト','期末テスト','テスティング','ガッツテスト','伝説のテスト')))
     elif message.content == ('slist'):
         await message.channel.send('sreg / すしばり\nsrule / するーる\nsstage / すすて\nsbuki / すぶき\nssp / すすぺ\nssub / すさぶ\nsctg / すぶきしゅ')
     elif message.content == ('sbuki'):
